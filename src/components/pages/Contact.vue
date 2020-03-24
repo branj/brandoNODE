@@ -1,10 +1,12 @@
 <template>
-    <div class="jumbotron">
+<div>
+    <div class="jumbotron bg-success rounded-0 text-dark">
         <h1 class="display-4">Contact</h1>
         <p class="lead">Interested in hiring me?</p>
         <hr class="my-4">
-        <p>Send and email to <a href="mailto:brandonleejennings@gmail.com">brandonleejennings@gmail.com</a></p>
+        <a class="btn btn-danger btn-lg" href="mailto:brandonleejennings@gmail.com">brandonleejennings@gmail.com</a>
     </div> 
+</div>
 </template>
 
 <script>

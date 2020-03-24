@@ -1,7 +1,7 @@
 <template>  
-    <nav class="nav flex-column">
-         <router-link  class="nav-link" v-for="link in links" :key="link.title" :to="link.href">{{link.title}}</router-link>
-    </nav>
+    <ul class="list-group list-group-flush">
+         <li v-for="link in links" :key="link.title" class="list-group-item"><router-link  :key="link.title" :to="link.href">{{link.title}}</router-link></li>
+    </ul>
 </template>
 
 <script>
@@ -10,8 +10,8 @@ const LINKS = [
     {title : 'About', href : 'about'},
     {title : 'Resume', href : 'resume'},
     //{title : 'Portfolio', href : '#portfolio'},
-    {title : 'Services',href:'services'},
-    {title : 'Blog', href : 'blog'},
+    //{title : 'Services',href:'services'},
+    //{title : 'Blog', href : 'blog'},
     //{title : 'Pricing', href : '#pricing'},
     //{title : 'Clients', href : '#clients'},
     {title : 'Contact', href : 'contact'},
